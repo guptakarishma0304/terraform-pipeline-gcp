@@ -13,6 +13,13 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Terraform'
+  displayName: 'Terraform Copy'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
