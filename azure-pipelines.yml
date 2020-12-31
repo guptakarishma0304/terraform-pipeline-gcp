@@ -27,7 +27,7 @@ steps:
   inputs:
     provider: 'gcp'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
     backendServiceGCP: 'gcp'
     backendGCPBucketName: 'stateterraform'
     backendGCPPrefix: 'dev'
