@@ -31,3 +31,9 @@ steps:
     backendServiceGCP: 'gcp'
     backendGCPBucketName: 'stateterraform'
     backendGCPPrefix: 'dev'
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'gcp'
+    command: 'plan'
+    environmentServiceNameGCP: 'gcp'
