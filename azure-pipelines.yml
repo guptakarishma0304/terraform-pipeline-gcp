@@ -31,5 +31,3 @@ steps:
     backendServiceGCP: 'gcp'
     backendGCPBucketName: 'stateterraform'
     backendGCPPrefix: 'dev/hello'
-    backendGCPBucketName: 'stateterraform'
-    backendGCPPrefix: 'dev'
