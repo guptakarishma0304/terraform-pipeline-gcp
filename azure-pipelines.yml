@@ -30,4 +30,4 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
     backendServiceGCP: 'gcp'
     backendGCPBucketName: 'stateterraform'
-    backendGCPPrefix: 'dev/hello'
+    backendGCPPrefix: 'dev'
