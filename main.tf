@@ -15,7 +15,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
  name         = "flask-vm-terraform"
  machine_type = "f1-micro"
- zone         = "us-west1-a"
+ zone         = "us-central1-a"
 
  boot_disk {
    initialize_params {
