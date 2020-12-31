@@ -19,6 +19,11 @@ steps:
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/Terraform'
   displayName: 'Terraform Copy'
+- task: TerraformInstaller@0
+  inputs:
+    terraformVersion: '0.12.3'
+  displayName: 'install terraform
+  '
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
