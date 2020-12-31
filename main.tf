@@ -7,9 +7,9 @@ provider "google" {
 }
 
 // Terraform plugin for creating random ids
-resource "random_id" "instance_id" {
- byte_length = 8
-}
+//resource "random_id" "instance_id" {
+ //byte_length = 8
+//}
 
 // A single Compute Engine instance
 resource "google_compute_instance" "default" {
