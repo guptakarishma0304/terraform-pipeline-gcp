@@ -37,3 +37,9 @@ steps:
     provider: 'gcp'
     command: 'plan'
     environmentServiceNameGCP: 'gcp'
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'gcp'
+    command: 'apply'
+    environmentServiceNameGCP: 'gcp'
