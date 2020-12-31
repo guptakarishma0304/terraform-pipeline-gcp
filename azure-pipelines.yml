@@ -17,7 +17,7 @@ steps:
   inputs:
     SourceFolder: '$(agent.builddirectory)'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/Terraform'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
   displayName: 'Terraform Copy'
 - task: TerraformInstaller@0
   inputs:
@@ -27,7 +27,7 @@ steps:
   inputs:
     provider: 'gcp'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
     backendServiceGCP: 'gcp'
     backendGCPBucketName: 'stateterraform'
     backendGCPPrefix: 'dev'
